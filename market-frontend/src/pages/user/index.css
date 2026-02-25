@@ -1,0 +1,91 @@
+.user-layout {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.user-header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 0 24px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-content {
+    padding: 40px 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.profile-card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+}
+
+.profile-text h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-text p {
+    margin: 0 0 12px;
+    color: #64748b;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tabs-card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.ant-tabs-nav::before {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.user-footer {
+    text-align: center;
+    color: #94a3b8;
+    padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logout-btn {
+        position: static;
+        margin-top: 16px;
+    }
+}

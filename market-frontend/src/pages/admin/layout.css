@@ -1,0 +1,151 @@
+/* Admin Layout Container */
+.admin-layout {
+    min-height: 100vh;
+    background: var(--surface-50);
+}
+
+/* Sidebar Styles */
+.admin-sider {
+    background: #0f172a !important;
+    /* Dark slate */
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    z-index: 20;
+}
+
+.admin-logo {
+    height: 80px;
+    /* Match header height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.logo-icon {
+    font-size: 28px;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Menu Customization */
+.ant-menu.ant-menu-dark {
+    background: transparent;
+}
+
+.ant-menu-dark .ant-menu-item {
+    margin: 4px 8px !important;
+    width: calc(100% - 16px) !important;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+    background: var(--primary-600) !important;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+}
+
+.ant-menu-dark .ant-menu-item:hover:not(.ant-menu-item-selected) {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Header Styles */
+.admin-header {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0 32px !important;
+    height: 80px !important;
+    line-height: 80px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 19;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 16px;
+    border-radius: 30px;
+    background: var(--surface-100);
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.admin-profile:hover {
+    background: #fff;
+    border-color: var(--primary-200);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.admin-profile span {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* Content Area */
+.admin-content-wrapper {
+    padding: 24px;
+    min-height: calc(100vh - 80px);
+}
+
+.admin-content-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    min-height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+/* Page Titles within Admin */
+.page-header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.page-title::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 24px;
+    background: var(--primary-500);
+    border-radius: 4px;
+}

@@ -1,0 +1,50 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-header h2 {
+    margin-bottom: 8px !important;
+    color: #1890ff;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.login-footer a {
+    color: #1890ff;
+    font-weight: 500;
+}
+
+.login-back-home {
+    text-align: center;
+    margin-top: 8px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 8px;
+}
+
+.login-back-home .ant-btn {
+    color: #666;
+}
+
+.login-back-home .ant-btn:hover {
+    color: #1890ff;
+}

@@ -1,0 +1,18 @@
+package com.campus.market.dto;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+/**
+ * 用户登录 DTO
+ */
+@Data
+@Schema(description = "用户登录 DTO")
+public class UserLoginDTO {
+
+    @Schema(description = "用户名")
+    private String username;
+
+    @Schema(description = "密码")
+    private String password;
+}
